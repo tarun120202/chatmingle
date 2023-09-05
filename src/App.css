@@ -165,3 +165,57 @@ img {
   border-radius: 50%;
   margin: 2px 5px;
 }
+
+
+/* Original CSS above ... */
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 0 10px; /* Add padding for smaller screens */
+  }
+
+  .App header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 5px;
+    height: 15vh; /* Increase height to fit content */
+  }
+
+  h1 {
+    margin-left: 0;
+    font-size: 1.5em; /* Reduce font size */
+  }
+
+  main {
+    margin: 15vh 0 15vh; /* Adjust margin to fit the adjusted header */
+  }
+
+  form {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  form button {
+    width: 100%; /* Full width for buttons */
+    margin-top: 5px; /* Add margin for spacing */
+  }
+
+  input {
+    width: 100%; /* Full width for input */
+    margin-bottom: 5px; /* Add margin for spacing */
+  }
+
+  p {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .message {
+    flex-direction: column; /* Stack messages vertically */
+  }
+
+  .sent, .received {
+    flex-direction: column; /* Stack messages vertically */
+  }
+}
